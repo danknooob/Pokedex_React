@@ -6,6 +6,7 @@ let padToThree=(number)=>(number<=999 ?`00${number}`.slice(-3) : number);
 
 class Pokecard extends Component {
     render() {
+        
         const imgSrc = `${POKE_API}${padToThree(this.props.id)}.png`;
 
         return (
